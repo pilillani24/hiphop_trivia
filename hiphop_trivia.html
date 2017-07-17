@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivia Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+  </script>
+  <style>
+    .jumbotron {
+      background: url('images/maxresdefault.jpg')no-repeat center center;
+      margin-bottom: 0px;
+      background-size: cover;
+      color: red;
+      font-family: 'bringThaNoize';
+      font-size: 64px;
+    }
+    @font-face{
+      font-family: 'bringThaNoize';
+      src: url('font/BRINGTHANOIZE.TTF') format('truetype'),
+           url('font/BRINGTHANOIZE.woff') format('woff');
+    }
+    #start{
+      font-family: 'bringThaNoize';
+      font-size: 32px;
+    }
+    body{
+      font-family: 'Rubik', sans-serif;
+      background: url("images/maxresdefault-1.jpg");
+      color: red;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Hip Hop Trivia Game</h1>
+        <div class="mainArea col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        </div>
+      </div>
+    </div>
+  </div>
+</br>
+  <div class="container">
+    <div class="text-center">
+      <button id="start" type="button" class="btn btn-default">You Game?</button>
+    </div>
+    <div id="setup" style="text-align: center">
+      <div id="setup">
+        <div id="timer"></div>
+        <div id="question"></div>
+        <div id="choice"></div>
+        <div id="answer"></div>
+        <div id="answer-image"></div>
+        <button id="re-start" type="button" class="btn btn-default">Re-Start</button>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="hiphop_trivia.js"> </script>
+
+</body>
+</html>
