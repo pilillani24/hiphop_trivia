@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax Examples</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		var myQuery = 'http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC';
+		$.ajax({
+			url: myQuery,
+			method: 'GET',
+		}).done(function(response){
+			console.log(response);
+		})
+	</script>
+</body>
+
+</html>
